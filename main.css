@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name <port-name> Catppuccin
+@namespace github.com/catppuccin/userstyles/styles/<port-name>
+@homepageURL https://github.com/catppuccin/userstyles/tree/main/styles/<port-name>
+@version 0.0.1
+@updateURL https://github.com/catppuccin/userstyles/raw/main/styles/<port-name>/catppuccin.user.css
+@supportURL https://github.com/catppuccin/userstyles/issues?q=is%3Aopen+is%3Aissue+label%3A<port-name>
+@description Soothing pastel theme for <port-name>
+@author Catppuccin
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
+@var select darkFlavor "Dark Flavor" ["latte:Latte", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve*", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Gray"]
+==/UserStyle== */
+:root {
+  color-scheme: dark;
+  --background-color: #1e1e2e !important;
+  --text-color: #cdd6f4 !important;
+  --text-color-light3: #a6adc8 !important;
+  --tag-dictionary-background-color: #cba6f7 !important;
+}
+:root ::selection {
+  background-color: rgba(245, 194, 231, 0.3);
+}
+:root input::placeholder,
+:root textarea::placeholder {
+  color: #a6adc8 !important;
+}
+:root :root[data-theme=dark] {
+  background-color: #f0f0f0;
+}
+:root .scrollbar {
+  scrollbar-color: #313244 #1e1e2e !important;
+}
+:root body {
+  color: #cdd6f4 !important;
+}
+:root .entry {
+  color: #cdd6f4 !important;
+}
+:root .gloss-sc-span {
+  color: #f38ba8 !important;
+}
+:root .gloss-sc-span {
+  color: #f38ba8 !important;
+}
+:root .tag-label-content {
+  color: #1e1e2e !important;
+}
+/* prettier-ignore */

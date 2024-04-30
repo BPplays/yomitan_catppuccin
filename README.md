@@ -1,0 +1,1 @@
+copy and paste the contents of `main.css` to Settings -> Popup Appearance -> Configure Custom CSS

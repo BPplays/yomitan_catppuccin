@@ -16,6 +16,7 @@
 ==/UserStyle== */
 :root {
   color-scheme: dark;
+  border-color: #1e1e2e !important;
   --background-color: #1e1e2e !important;
   --text-color: #cdd6f4 !important;
   --text-color-light3: #a6adc8 !important;
@@ -34,8 +35,11 @@
 :root textarea::placeholder {
   color: #a6adc8 !important;
 }
-:root :root[data-theme=dark] {
-  background-color: #f0f0f0;
+:root[data-theme=dark] {
+  border-color: #1e1e2e !important;
+}
+:root iframe.yomitan-popup[data-theme=dark] {
+  border-color: #1e1e2e !important;
 }
 :root .scrollbar {
   scrollbar-color: #313244 #1e1e2e !important;
@@ -45,6 +49,9 @@
 }
 :root .entry {
   color: #cdd6f4 !important;
+}
+:root .yomitan-popup {
+  border-color: #1e1e2e !important;
 }
 :root .gloss-sc-rt > .gloss-sc-span:not(.gloss-content.structured-content > .gloss-sc-div >.gloss-sc-span) {
   color: #f38ba8 !important;
@@ -90,5 +97,10 @@
   color: #313244 !important;
   border-color: #f38ba8 !important;
   background-color: #f38ba8 !important;
+}
+:root .gloss-sc-span[style="color: var(--background-color); background-color: var(--text-color); border-color: var(--text-color); border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+  color: #313244 !important;
+  border-color: #cdd6f4 !important;
+  background-color: #cdd6f4 !important;
 }
 /* prettier-ignore */

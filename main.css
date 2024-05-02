@@ -18,6 +18,7 @@
   color-scheme: dark;
   border-color: #1e1e2e !important;
   --background-color: #1e1e2e !important;
+  --accent-color: #f5c2e7 !important;
   --text-color: #cdd6f4 !important;
   --text-color-light3: #a6adc8 !important;
   --tag-dictionary-background-color: #cba6f7 !important;
@@ -102,5 +103,16 @@
   color: #313244 !important;
   border-color: #cdd6f4 !important;
   background-color: #cdd6f4 !important;
+}
+:root .gloss-sc-span[style="color: crimson; cursor: help;"],
+:root .gloss-sc-span[style="color: crimson;"] {
+  color: #f38ba8 !important;
+}
+:root .gloss-sc-div[style="background-color: color-mix(in srgb, goldenrod 5%, transparent); border-color: goldenrod; border-style: none none none solid; border-radius: 0.4rem; margin-top: 0.5rem; margin-bottom: 0.5rem; padding: 0.5rem;"] {
+  border-color: #f9e2af !important;
+  background-color: color-mix(in srgb, #f9e2af 5%, transparent) !important;
+}
+:root .icon[data-icon=play-audio] {
+  color: #cdd6f4 !important;
 }
 /* prettier-ignore */

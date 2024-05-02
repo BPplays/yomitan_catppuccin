@@ -88,20 +88,80 @@
 		--text-color: @text !important;
 		--text-color-light3: @subtext0 !important;
 		--tag-dictionary-background-color: @mauve !important;
+		--tag-frequency-background-color: @green !important;
+		--tag-popular-background-color: @blue !important;
+		--tag-frequent-background-color: @teal !important;
+		--text-color-light2: @subtext0 !important;
+		--background-color-dark1: @surface0 !important;
+		--tag-archaism-background-color: @red !important;
 	}
 
-	.gloss-sc-span {
+	.gloss-sc-rt > .gloss-sc-span:not(.gloss-content.structured-content > .gloss-sc-div >.gloss-sc-span) {
 		color: @red !important;
 	}
 
-	.gloss-sc-span {
-		color: @red !important;
-	}
+	// .gloss-content.structured-content > .gloss-sc-div >.gloss-sc-span {
+	// 	color: @subtext1 !important;
+	// 	background-color: @surface0 !important;
+	// }
 
 	.tag-label-content {
 		color: @base !important;
 	}
 
+	// .gloss-content.structured-content > .gloss-sc-div {
+	// 	background-color: color-mix(in srgb, @mauve 30%, transparent) !important;
+	// }
+
+	// .gloss-sc-ol > .gloss-sc-li > .gloss-sc-span {
+	// 	background-color: @mauve !important;
+	// }
+
+	.gloss-sc-span[data-sc-code="rare"] {
+		background-color: @mauve !important;
+		color: @surface0 !important;
+	}
+
+	.gloss-sc-span[data-sc-code="ctr"],
+	.gloss-sc-span[data-sc-code="ctr"],
+	.gloss-sc-span[data-sc-code="ctr"],
+	.gloss-sc-span[data-sc-code="suf"],
+	.gloss-sc-span[data-sc-code="pref"],
+	.gloss-sc-span[data-sc-code="n"] {
+		color: @subtext1 !important;
+		background-color: @surface0 !important;
+	}
+
+	.gloss-sc-span[data-sc-code="hon"],
+	.gloss-sc-span[data-sc-code="hon"],
+	.gloss-sc-span[data-sc-code="hon"],
+	.gloss-sc-span[data-sc-code="abbr"] {
+		color: @surface0 !important;
+		background-color: @red !important;
+	}
+
+	.gloss-sc-th, .gloss-sc-td {
+		border-color: @surface1 !important;
+	}
+	
+
+	.gloss-sc-span[style="color: white; background-color: green; border-color: green; border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+		color: @surface0 !important;
+		border-color: @green !important;
+		background-color: @green !important;
+	}
+
+	.gloss-sc-span[style="color: white; background-color: blue; border-color: blue; border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+		color: @surface0 !important;
+		border-color: @blue !important;
+		background-color: @blue !important;
+	}
+
+	.gloss-sc-span[style="color: white; background-color: crimson; border-color: crimson; border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+		color: @surface0 !important;
+		border-color: @red !important;
+		background-color: @red !important;
+	}
 
 }
 

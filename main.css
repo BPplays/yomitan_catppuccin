@@ -20,6 +20,12 @@
   --text-color: #cdd6f4 !important;
   --text-color-light3: #a6adc8 !important;
   --tag-dictionary-background-color: #cba6f7 !important;
+  --tag-frequency-background-color: #a6e3a1 !important;
+  --tag-popular-background-color: #89b4fa !important;
+  --tag-frequent-background-color: #94e2d5 !important;
+  --text-color-light2: #a6adc8 !important;
+  --background-color-dark1: #313244 !important;
+  --tag-archaism-background-color: #f38ba8 !important;
 }
 :root ::selection {
   background-color: rgba(245, 194, 231, 0.3);
@@ -40,13 +46,49 @@
 :root .entry {
   color: #cdd6f4 !important;
 }
-:root .gloss-sc-span {
-  color: #f38ba8 !important;
-}
-:root .gloss-sc-span {
+:root .gloss-sc-rt > .gloss-sc-span:not(.gloss-content.structured-content > .gloss-sc-div >.gloss-sc-span) {
   color: #f38ba8 !important;
 }
 :root .tag-label-content {
   color: #1e1e2e !important;
+}
+:root .gloss-sc-span[data-sc-code="rare"] {
+  background-color: #cba6f7 !important;
+  color: #313244 !important;
+}
+:root .gloss-sc-span[data-sc-code="ctr"],
+:root .gloss-sc-span[data-sc-code="ctr"],
+:root .gloss-sc-span[data-sc-code="ctr"],
+:root .gloss-sc-span[data-sc-code="suf"],
+:root .gloss-sc-span[data-sc-code="pref"],
+:root .gloss-sc-span[data-sc-code="n"] {
+  color: #bac2de !important;
+  background-color: #313244 !important;
+}
+:root .gloss-sc-span[data-sc-code="hon"],
+:root .gloss-sc-span[data-sc-code="hon"],
+:root .gloss-sc-span[data-sc-code="hon"],
+:root .gloss-sc-span[data-sc-code="abbr"] {
+  color: #313244 !important;
+  background-color: #f38ba8 !important;
+}
+:root .gloss-sc-th,
+:root .gloss-sc-td {
+  border-color: #45475a !important;
+}
+:root .gloss-sc-span[style="color: white; background-color: green; border-color: green; border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+  color: #313244 !important;
+  border-color: #a6e3a1 !important;
+  background-color: #a6e3a1 !important;
+}
+:root .gloss-sc-span[style="color: white; background-color: blue; border-color: blue; border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+  color: #313244 !important;
+  border-color: #89b4fa !important;
+  background-color: #89b4fa !important;
+}
+:root .gloss-sc-span[style="color: white; background-color: crimson; border-color: crimson; border-style: solid; border-radius: 100%; border-width: 0.75px; padding: 0.15em 0.15em 0.05em; cursor: help;"] {
+  color: #313244 !important;
+  border-color: #f38ba8 !important;
+  background-color: #f38ba8 !important;
 }
 /* prettier-ignore */
